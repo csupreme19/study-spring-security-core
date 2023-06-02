@@ -1,1 +1,16 @@
-
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/core-spring-security
+    hikari:
+      username: postgres
+      password: test1234
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+        use_sql_comments: true
+  thymeleaf:
+    cache: false
